@@ -13,7 +13,7 @@ def increase(frame, count):
 
 num = 25
 source = wave.open("in.wav", mode="rb")
-dest = wave.open("increased.wav", mode="wb")
+dest = wave.open("dicreased.wav", mode="wb")
 dest.setparams(source.getparams())
 frames_count = source.getnframes()
 data = struct.unpack("<" + str(frames_count) + "h", source.readframes(frames_count))
