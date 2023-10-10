@@ -2,7 +2,7 @@ import wave
 import struct
 
 
-def increase(frame, count):
+def dicrease(frame, count):
     frame //= count
     if frame >= 32767:
         return 32767
@@ -17,7 +17,7 @@ dest = wave.open("dicreased.wav", mode="wb")
 dest.setparams(source.getparams())
 frames_count = source.getnframes()
 data = struct.unpack("<" + str(frames_count) + "h", source.readframes(frames_count))
-newdata = list(map(lambda frame: increase(frame, num), data))
+newdata = list(map(lambda frame: dicrease(frame, num), data))
 newframes = struct.pack("<" + str(len(newdata)) + "h", *newdata)
 dest.writeframes(newframes)
 source.close()
