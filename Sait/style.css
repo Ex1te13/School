@@ -1,0 +1,65 @@
+
+table {
+    width: 450px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #CCFFCC;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+body {
+    background-color: lightyellow;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr {
+    color: navy;
+}
+
+h1 {
+    color: navy;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.blocks {
+    display: flex;
+    grid-gap: 100px;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.blocks1 {
+    display: flex;
+    grid-gap: 350px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+}
+
+a:visited {
+    color: green;
+    text-decoration: underline;
+}
+
+a:active {
+    color: navy;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: orange;
+    text-decoration: none;
+}
